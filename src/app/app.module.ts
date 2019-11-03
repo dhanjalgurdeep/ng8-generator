@@ -1,18 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { DygenericService } from './service/dygeneric.service';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { DycomponentComponent } from './component/dycomponent/dycomponent.component';
+import { LoadTemplate } from './directives/load-template';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+   // DycomponentComponent,
+    LoadTemplate
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DygenericService],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

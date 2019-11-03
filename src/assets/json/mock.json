@@ -1,0 +1,10 @@
+[
+    {
+        "templateName" : "../../assets/templates/template1.html",
+        "service" : "../../assets/json/service-one.json"
+    },
+    {
+        "templateName" : "../../assets/templates/template2.html",
+        "service" : "../../assets/json/service-two.json"
+    }
+]
